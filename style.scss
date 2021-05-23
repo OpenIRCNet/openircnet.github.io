@@ -283,6 +283,29 @@ footer {
   text-align: center;
 }
 
+code, pre, kbd {
+  font-family: 'Ubuntu Mono', monospace;
+  background-color: var(--c-bg-secondary);
+  overflow-x: auto;
+  border-radius: .3rem;
+}
+
+code, kbd {
+  padding: .1rem .3rem;
+  border: 1px solid var(--c-border);
+}
+
+pre code {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+pre {
+  padding: .3rem 1rem;
+  border: 1px solid var(--c-border);
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
